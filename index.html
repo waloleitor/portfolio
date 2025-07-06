@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tomás Sarciat Roch — WaloleitorDev</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icono -->
+    <link rel="shortcut icon" href="./imagenes/favicon-ts.png" type="image/x-icon">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+</head>
+
+<body>
+    <!-- MENÚ FIJO -->
+    <header>
+    <nav class="navbar fixed-top d-flex justify-content-center">
+        <div class="bg-menu rounded shadow px-4 py-2">
+            <ul class="navbar-nav flex-row gap-4">
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#proyectos">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#formacion">Formación</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#habilidades">Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+    <!-- CONTENIDO DEMO -->
+    <main class="container text-center mt-5 pt-5">
+        <h1 class="display-4">Bienvenido a mi Portfolio</h1>
+        <p class="lead">Soy Tomás Sarciat Roch, desarrollador fullstack con enfoque en soluciones modernas y tecnológicas.</p>
+    </main>
+    <section id="sobre-mi" class="container py-5">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-md-4 text-center mb-4">
+                <img src="./imagenes/yo-sinfondo.png" alt="Foto de Tomás Sarciat Roch" class="foto-perfil">
+            </div>
+            <div class="col-md-8 texto-sobre-mi">
+                <h2 class="mb-3">Sobre mí</h2>
+                <p class="lead">
+                ¡Hola! Soy <strong>Tomás Sarciat Roch</strong>, desarrollador fullstack en formación con pasión por la tecnología, la IA y las soluciones útiles. 
+                Actualmente trabajo como repartidor y compagino mi día a día con el aprendizaje intensivo de programación. Me especializo en crear aplicaciones prácticas, intuitivas y con visión de futuro.
+                </p>
+                <p>
+                Me gusta construir cosas desde cero, resolver problemas reales y aprender algo nuevo cada día. Estoy abierto a colaborar en proyectos que mezclen desarrollo, inteligencia artificial y mejora de procesos.
+                </p>
+            </div>
+        </div>
+    </section>
+<section id="proyectos" class="container py-5">
+  <h2 class="text-center mb-5">🚀 Proyectos</h2>
+  <div class="row g-4 justify-content-center">
+
+    <!-- Contact List -->
+    <div class="col-md-4">
+      <div class="card proyecto-card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Contact List</h5>
+          <p class="card-text">App de gestión de contactos con CRUD completo. Conexión a API externa, edición en tiempo real y Context API para manejo de estado global.</p>
+          <div class="tech-icons mt-3">
+            <i class="devicon-react-original colored"></i>
+            <i class="devicon-bootstrap-plain colored"></i>
+            <i class="devicon-javascript-plain colored"></i>
+          </div>
+        </div>
+        <div class="card-footer bg-transparent border-top-0">
+          <a href="#" class="btn btn-outline-info w-100" target="_blank">Ver Proyecto</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- StarWars Blog + API -->
+    <div class="col-md-4">
+      <div class="card proyecto-card h-100">
+        <div class="card-body">
+          <h5 class="card-title">StarWars Blog</h5>
+          <p class="card-text">Frontend en React con sistema de favoritos y diseño responsivo, conectado a una API propia con Flask y base de datos relacional.</p>
+          <div class="tech-icons mt-3">
+            <i class="devicon-react-original colored"></i>
+            <i class="devicon-flask-original"></i>
+            <i class="devicon-postgresql-plain colored"></i>
+            <i class="devicon-javascript-plain colored"></i>
+          </div>
+        </div>
+        <div class="card-footer bg-transparent border-top-0">
+          <a href="#" class="btn btn-outline-info w-100" target="_blank">Ver Proyecto</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modelo de datos Instagram -->
+    <div class="col-md-4">
+      <div class="card proyecto-card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Modelo de Datos Instagram</h5>
+          <p class="card-text">Representación en SQLAlchemy de una red social estilo Instagram con usuarios, seguidores, comentarios, publicaciones y medios.</p>
+          <div class="tech-icons mt-3">
+            <i class="devicon-python-plain colored"></i>
+            <i class="devicon-sqlite-plain colored"></i>
+          </div>
+        </div>
+        <div class="card-footer bg-transparent border-top-0">
+          <span class="btn btn-outline-info w-100 disabled">Modelo DB</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- API Familia Jackson -->
+    <div class="col-md-4">
+      <div class="card proyecto-card h-100">
+        <div class="card-body">
+          <h5 class="card-title">API Familia Jackson</h5>
+          <p class="card-text">API REST construida en Flask para gestionar una estructura familiar dinámica en memoria. Incluye endpoints GET, POST, DELETE.</p>
+          <div class="tech-icons mt-3">
+            <i class="devicon-flask-original"></i>
+            <i class="devicon-python-plain colored"></i>
+          </div>
+        </div>
+        <div class="card-footer bg-transparent border-top-0">
+          <a href="#" class="btn btn-outline-info w-100" target="_blank">Ver Proyecto</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dashboard Gecoinsa -->
+    <div class="col-md-4">
+      <div class="card proyecto-card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Dashboard Interno – Gecoinsa</h5>
+          <p class="card-text">Panel de gestión para empleados de logística. Incluye control de vacaciones, tickets, nóminas y formación.</p>
+          <div class="tech-icons mt-3">
+            <i class="devicon-react-original colored"></i>
+            <i class="devicon-flask-original"></i>
+          </div>
+        </div>
+        <div class="card-footer bg-transparent border-top-0">
+          <span class="btn btn-outline-info w-100 disabled">Proyecto interno</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- App Android Fichaje -->
+    <div class="col-md-4">
+      <div class="card proyecto-card h-100">
+        <div class="card-body">
+          <h5 class="card-title">App Android – Fichaje</h5>
+          <p class="card-text">App en React Native para fichar jornada, pausar y reanudar trabajo desde el móvil. Historial dinámico incluido.</p>
+          <div class="tech-icons mt-3">
+            <i class="devicon-react-original colored"></i>
+            <i class="devicon-javascript-plain colored"></i>
+          </div>
+        </div>
+        <div class="card-footer bg-transparent border-top-0">
+          <span class="btn btn-outline-info w-100 disabled">En desarrollo</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- GenePrompt -->
+    <div class="col-md-4">
+      <div class="card proyecto-card h-100">
+        <div class="card-body">
+          <h5 class="card-title">GenePrompt</h5>
+          <p class="card-text">Simulador visual de edición genética con IA. Modifica atributos visuales como fuerza, piel u ojos. Generación visual + avatar IA.</p>
+          <div class="tech-icons mt-3">
+            <i class="devicon-react-original colored"></i>
+            <i class="devicon-flask-original"></i>
+            <i class="devicon-python-plain colored"></i>
+          </div>
+        </div>
+        <div class="card-footer bg-transparent border-top-0">
+          <span class="btn btn-outline-info w-100 disabled">En planificación</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- LearnLegal -->
+    <div class="col-md-4">
+      <div class="card proyecto-card h-100">
+        <div class="card-body">
+          <h5 class="card-title">LearnLegal</h5>
+          <p class="card-text">Traductor legal con IA. Pega texto o sube archivos y obtén una versión simplificada, usando procesamiento semántico externo.</p>
+          <div class="tech-icons mt-3">
+            <i class="devicon-flask-original"></i>
+            <i class="devicon-python-plain colored"></i>
+          </div>
+        </div>
+        <div class="card-footer bg-transparent border-top-0">
+          <span class="btn btn-outline-info w-100 disabled">En desarrollo</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- S.E.R.A. -->
+    <div class="col-md-4">
+      <div class="card proyecto-card h-100">
+        <div class="card-body">
+          <h5 class="card-title">S.E.R.A.</h5>
+          <p class="card-text">IA local por voz con memoria, emociones y conversación natural. Funciona sin conexión usando modelos LLM, TTS y Whisper.</p>
+          <div class="tech-icons mt-3">
+            <i class="devicon-python-plain colored"></i>
+            <i class="devicon-linux-plain colored"></i>
+          </div>
+        </div>
+        <div class="card-footer bg-transparent border-top-0">
+          <span class="btn btn-outline-info w-100 disabled">Desarrollo privado</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="formacion" class="container py-5">
+  <h2 class="text-center mb-5">Formación Académica</h2>
+  <div class="timeline">
+
+    <!-- Bootcamp 4Geeks -->
+    <div class="timeline-item">
+      <h5 class="timeline-title">Bootcamp Fullstack Developer — 4Geeks Academy</h5>
+      <span class="timeline-dates">2025</span>
+      <p>Formación intensiva en desarrollo web fullstack con JavaScript, React, Python, Flask, SQL y metodologías ágiles. Creación de proyectos reales desde cero y trabajo con APIs externas.</p>
+    </div>
+
+    <!-- Formación autodidacta en Python -->
+    <div class="timeline-item">
+      <h5 class="timeline-title">Formación Autodidacta — Python y Automatización</h5>
+      <span class="timeline-dates">2023 - Actualidad</span>
+      <p>Aprendizaje por cuenta propia en programación con Python, incluyendo automatización de tareas, gestión de archivos, uso de bibliotecas como Pandas y desarrollo de scripts útiles para la vida diaria.</p>
+    </div>
+
+    <!-- Conocimientos en IA local -->
+    <div class="timeline-item">
+      <h5 class="timeline-title">Inteligencia Artificial Local — Investigación y Pruebas</h5>
+      <span class="timeline-dates">2024 - Actualidad</span>
+      <p>Exploración práctica de modelos de IA locales, incluyendo configuración de entornos con LLaMA, Whisper y TTS, comprensión emocional artificial, y desarrollo de prototipos personalizados de asistentes por voz.</p>
+    </div>
+
+    <!-- Autoformación general -->
+    <div class="timeline-item">
+      <h5 class="timeline-title">Autoformación Continua — Desarrollo Personal</h5>
+      <span class="timeline-dates">Toda la vida</span>
+      <p>Aprendizaje autodirigido constante en áreas como diseño de interfaces, pensamiento lógico, estructuras de datos, redes, ciberseguridad básica, y herramientas de productividad para programadores.</p>
+    </div>
+
+  </div>
+</section>
+<section id="habilidades" class="container py-5">
+  <h2 class="text-center mb-5">Habilidades Técnicas</h2>
+  <div class="row text-center g-4 justify-content-center">
+
+    <!-- React -->
+    <div class="col-4 col-md-2">
+      <i class="devicon-react-original colored skill-icon"></i>
+      <p class="mt-2">React</p>
+    </div>
+
+    <!-- JavaScript -->
+    <div class="col-4 col-md-2">
+      <i class="devicon-javascript-plain colored skill-icon"></i>
+      <p class="mt-2">JavaScript</p>
+    </div>
+
+    <!-- Python -->
+    <div class="col-4 col-md-2">
+      <i class="devicon-python-plain colored skill-icon"></i>
+      <p class="mt-2">Python</p>
+    </div>
+
+    <!-- Flask -->
+    <div class="col-4 col-md-2">
+      <i class="devicon-flask-original skill-icon"></i>
+      <p class="mt-2">Flask</p>
+    </div>
+
+    <!-- PostgreSQL -->
+    <div class="col-4 col-md-2">
+      <i class="devicon-postgresql-plain colored skill-icon"></i>
+      <p class="mt-2">PostgreSQL</p>
+    </div>
+
+    <!-- HTML5 -->
+    <div class="col-4 col-md-2">
+      <i class="devicon-html5-plain colored skill-icon"></i>
+      <p class="mt-2">HTML5</p>
+    </div>
+
+    <!-- CSS3 -->
+    <div class="col-4 col-md-2">
+      <i class="devicon-css3-plain colored skill-icon"></i>
+      <p class="mt-2">CSS3</p>
+    </div>
+
+    <!-- Bootstrap -->
+    <div class="col-4 col-md-2">
+      <i class="devicon-bootstrap-plain colored skill-icon"></i>
+      <p class="mt-2">Bootstrap</p>
+    </div>
+
+    <!-- Tailwind -->
+    <div class="col-4 col-md-2">
+      <i class="devicon-tailwindcss-plain colored skill-icon"></i>
+      <p class="mt-2">Tailwind</p>
+    </div>
+
+    <!-- Git -->
+    <div class="col-4 col-md-2">
+      <i class="devicon-git-plain colored skill-icon"></i>
+      <p class="mt-2">Git</p>
+    </div>
+
+    <!-- GitHub -->
+    <div class="col-4 col-md-2">
+      <i class="devicon-github-original skill-icon"></i>
+      <p class="mt-2">GitHub</p>
+    </div>
+
+    <!-- Kotlin (aprendiendo) -->
+    <div class="col-4 col-md-2">
+      <i class="devicon-kotlin-plain colored skill-icon"></i>
+      <p class="mt-2">Kotlin</p>
+    </div>
+
+    <!-- React Native -->
+    <div class="col-4 col-md-2">
+      <i class="devicon-react-original colored skill-icon"></i>
+      <p class="mt-2">React Native</p>
+    </div>
+    <!-- SQL -->
+<div class="col-4 col-md-2">
+  <i class="devicon-mysql-plain colored skill-icon"></i>
+  <p class="mt-2">SQL</p>
+</div>
+
+
+  </div>
+</section>
+<section id="contacto" class="container py-5">
+  <h2 class="text-center mb-5">Contacto</h2>
+
+  <form class="contact-form mx-auto formulario-contacto">
+    <div class="mb-3">
+      <label for="nombre" class="form-label">Nombre</label>
+      <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">Correo electrónico</label>
+      <input type="email" class="form-control" id="email" placeholder="tucorreo@email.com">
+    </div>
+
+    <div class="mb-3">
+      <label for="mensaje" class="form-label">Mensaje</label>
+      <textarea class="form-control" id="mensaje" rows="5" placeholder="Escribe tu mensaje..."></textarea>
+    </div>
+
+    <div class="text-center mt-4">
+      <button type="submit" class="btn btn-contacto">Enviar mensaje</button>
+    </div>
+  </form>
+</section>
+<footer class="footer mt-5 py-4">
+  <div class="container text-center">
+    <p class="mb-2">© 2025 Tomás Sarciat Roch — <strong>WaloleitorDev</strong></p>
+
+    <div class="d-flex justify-content-center gap-4">
+      <a href="https://github.com/waloleitor" target="_blank" rel="noopener" class="footer-link">
+GitHub</a>
+
+<a href="https://www.linkedin.com/in/tom%C3%A1s-sarciat-roch-5b2a78353/" target="_blank" rel="noopener" class="footer-link">
+    Linkedin</a>
+      <a href="mailto:tucorreo@email.com" class="footer-link">
+E-mail      </a>
+    </div>
+  </div>
+</footer>
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
